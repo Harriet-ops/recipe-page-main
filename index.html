@@ -24,36 +24,7 @@
       src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
       font-weight: 400;
     }
-    /* @media (max-width:375px){
-
-    body{
-      background-color:hsl(30, 54%, 90%) ;
-      display: flex;
-      padding: 0;
-      margin: 0;
-
-    }
-    .image-omelette{
-      width: 100%;
-      height: 37%;
-    }
-    .omelette-title{
-      display: inline-block;
-      padding-left: 22px;
-    }
-    .omelette-title h1{
-      font-family: 'young-serif';
-      font-weight: 300;
-      font-size: 2rem;
-      line-height: 29px;
-    }
-    .omelette-title p{
-      font-size: 14px;
-      font-family: 'Outfit';
-      font-weight: 200;
-    }
-  } */
-
+    
 *{
   padding: 0;
   margin: 0;
@@ -89,6 +60,7 @@ body{
   margin-top: 0.4rem;
 
 }
+
 .omelette-title p{
   font-family: 'Outfit';
   font-size: 0.6rem;
@@ -202,7 +174,7 @@ h3{
 hr{
   border: none;            /* remove default styling */
   height: 0.05em;             /* thickness of the line */
-  background-color: #e9e7e8; /* your color */
+  background-color: hsl(30, 18%, 87%); /* your color */
   width: 100%;              /* length of the line */
   margin-top: 1px;         /* space above */
   margin-bottom: 1px;     /* space below */
@@ -228,9 +200,128 @@ p span{
   color:hsl(14, 45%, 36%);
   font-weight: bolder;
   align-items: start;
+}
+
+@media  (max-width: 1024px) {
+  body{
+    height: 100vh;
+    width: 100vw;
+    
+    
+  }
+ 
+  .recipe{
+    width: auto;      /* Let it shrink/grow naturally */
+    height: auto;     /* Fit content height */
+    max-width: 80%;  /* Prevent overflow */
+    margin: 0 auto;   /* Keep it centered if needed */
+    padding: 1rem;    /* Adjust spacing for mobile */
+    
+  }
+  }
    
+
+
+
+
+
+@media(max-width:375px){
+  body{
+    background-color: unset;
+    width: 100vw;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    
+    
+    
+  }
+  .recipe{
+    width: 100vw;
+    height: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+  
+
+  .plate{
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: -3vw;
+    position: relative;
+    left: 50%;
+    right:50% ;
+    width: 100vw;
+  
+  }
+.image-omelette{
+  border-radius: 0%;
   
 }
+.omelette-title h1{
+font-size: 2rem;
+margin-top: 0.2rem;
+line-height: 1.9rem;
+}
+.omelette-title p{
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+}
+.preparations-list {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  padding: 0.7rem;
+  line-height: 1rem;
+  border-radius: 0.5rem;
+}
+.ingredient-list h2{
+  font-size: 0.9rem;
+  color:hsl(14, 45%, 36%);
+  margin-top: 0.4rem;
+}
+
+.ingredient-list ul{
+  list-style-position: inside;
+  font-size: 0.47rem;
+  line-height: 0.7rem; 
+}
+
+h4{
+  font-size: 0.9rem;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 0.3rem;
+}
+
+.ingredient-list ul{
+  list-style-position: inside;
+  font-size: 0.5rem;
+  line-height: 0.8rem; 
+}
+
+.line{
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.Instructions-list{
+  font-size: 0.5rem;
+  line-height: 0.9rem;
+}
+
+h3{
+  font-size: 0.8rem;
+   margin-bottom: 0.2rem;
+}
+
+.nutrition-list p{
+  margin-top: 0.3rem ;
+  margin-left: 0.2rem;
+  margin-bottom: 0.2rem;
+  display: flex;
+}
+
+
+}
+
   </style>
 </head>
 <body>
